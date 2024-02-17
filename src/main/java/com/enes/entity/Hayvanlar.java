@@ -10,6 +10,8 @@ public class Hayvanlar extends BaseEntity{
   private int yasamSuresi;
   private int yas;
 
+
+
   public Hayvanlar(){}
 
   public Hayvanlar(String tur, String ad, int yasamSuresi, int yas) {
@@ -19,7 +21,10 @@ public class Hayvanlar extends BaseEntity{
     this.yasamSuresi = yasamSuresi;
     this.yas = yas;
   }
+public static void bilgiGetir(){
 
+    System.out.println("BILGILER GETIRILDI");
+}
   @Override
   public String toString() {
     final StringBuffer sb = new StringBuffer("Hayvanlar{");

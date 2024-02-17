@@ -7,8 +7,10 @@ import com.enes.entity.Surungenler;
 
 public class RunnerHayvanlar {
     public static void main(String[] args) {
-    Memeliler memeliler=new Memeliler("UCAN","YARASA",12,20);
+    Hayvanlar memeliler=new Memeliler("MEMELI","YARASA",17,15);
+    Memeliler memeliler1=new Memeliler("MEMELI","INEK",12,8);
     Hayvanlar hayvanlar=new Hayvanlar();
+    Hayvanlar surungenler1=new Surungenler("SURUNGEN","TIMSAH",50,30,false);
     Kuslar kuslar=new Kuslar("UCAN","KARTAL",12,9,5,true);
     Surungenler surungenler=new Surungenler("SURUNGEN","TIMSAH",50,30,false);
         System.out.println(memeliler.toString());
@@ -16,10 +18,12 @@ public class RunnerHayvanlar {
         System.out.println(surungenler.toString());
         hayvanlar.yas(2000);
         surungenler.ureme(6);
-        memeliler.ureme(2);
+        memeliler1.ureme(2);
         kuslar.yemVer();
-        memeliler.suVer();
+        memeliler1.suVer();
         kuslar.suVer();
+
+
 
 
 
